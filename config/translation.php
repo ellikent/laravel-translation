@@ -23,7 +23,7 @@ return [
     |
     */
     'route_group_config' => [
-        'middleware' => 'web',
+        'middleware' => ['web','auth']
     ],
 
     /*
@@ -68,10 +68,10 @@ return [
     */
     'database' => [
 
-        'connection' => '',
+        'connection' => 'database',
 
-        'languages_table' => 'languages',
+        'languages_table' => 'multistore_languages',
 
-        'translations_table' => 'translations',
+        'translations_table' => 'multistore_translations',
     ],
 ];
